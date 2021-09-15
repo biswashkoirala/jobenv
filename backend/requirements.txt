@@ -8,8 +8,18 @@ jinja2
 aiofiles
 
 #for database   #new
-sqlalchemy         
+sqlalchemy
 psycopg2
 
 #for loading environment variables  #new
 python-dotenv
+
+#for email validation
+pydantic[email]
+
+#hashing
+passlib[bcrypt]
+
+# testing
+pytest
+requests
