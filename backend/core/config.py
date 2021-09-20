@@ -15,5 +15,10 @@ class Settings:
     POSTGRES_USER : str = os.getenv("POSTGRES_USER",'postgres')
     POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD",'himal')
     DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
+    SECRET_KEY : str = os.getenv("SECRET_KEY")
+    ALGORITHM = 'HS256'
+    ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
 
 settings = Settings()

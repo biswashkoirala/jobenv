@@ -23,3 +23,8 @@ passlib[bcrypt]
 # testing
 pytest
 requests
+
+#for jwt tokens    #new
+python-jose
+
+python-multipart
